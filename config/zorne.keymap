@@ -54,7 +54,7 @@
         //COMBO(semicolon, &kp SEMI, 18 19, 60
         //COMBO(slash, &kp FSLH, 1 2, 60)
         COMBO(escape, &kp ESC, 1 2, 60)
-        COMBO(return, &kp RET, 17 18, 60)idd
+        COMBO(return, &kp RET, 17 18, 60)
         //COMBO(minus, &kp MINUS, 31 32, 60)
         //COMBO(underscore, &kp UNDER, 32 33, 60)
         //COMBO(capslock, &caps_word, 20 21, 60)
