@@ -17,12 +17,12 @@
     continue-list = <DEL MINUS BSPC>;
 };
 
-#define QWERT_L 0
-#define NUM_L   1
-#define SYM_L   2
-#define NAV_L   3
-//#define FUN_L   4
+#define BASE_L 0
+#define NUM_L  1
+#define SYM_L  2
+#define NAV_L  3
 
+//todo: make copy and paste shortcuts. with CMD, not CTRL
 #define MY_COPY LC(INSERT)
 #define MY_PASTE LS(INSERT)
 //#define VI_U LC(Z)
@@ -33,13 +33,13 @@
     combos {
         compatible = "zmk,combos";
 
-    // shortcut
-    #define COMBO(NAME, BINDINGS, KEYPOS, TIMEOUT) \
-          combo_##NAME { \
-            timeout-ms = <TIMEOUT>; \
-            bindings = <BINDINGS>; \
-            key-positions = <KEYPOS>; \
-          };
+        // shortcut
+        #define COMBO(NAME, BINDINGS, KEYPOS, TIMEOUT) \
+              combo_##NAME { \
+                timeout-ms = <TIMEOUT>; \
+                bindings = <BINDINGS>; \
+                key-positions = <KEYPOS>; \
+              };
 
         /*                KEY POSITIONS
 
@@ -50,16 +50,10 @@
           ╰───────╮ 30  31  32 │ │ 33  34  35 ╭───────╯
                   ╰────────────╯ ╰────────────╯        */
 
-
-        //COMBO(semicolon, &kp SEMI, 18 19, 60
-        //COMBO(slash, &kp FSLH, 1 2, 60)
         COMBO(escape, &kp ESC, 1 2, 60)
+        COMBO(tab, &kp TAB, 11 12, 60)
+        COMBO(backspace, &kp BSPC, 7 8, 60)
         COMBO(return, &kp RET, 17 18, 60)
-        //COMBO(minus, &kp MINUS, 31 32, 60)
-        //COMBO(underscore, &kp UNDER, 32 33, 60)
-        //COMBO(capslock, &caps_word, 20 21, 60)
-        COMBO(reset_left, &bootloader, 0 1 2 3, 100)
-        //COMBO(reset_right, &bootloader, 6 7 8 9, 100)
     };
 
     behaviors {
