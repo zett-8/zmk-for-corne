@@ -53,9 +53,10 @@
 
         //COMBO(semicolon, &kp SEMI, 18 19, 60
         //COMBO(slash, &kp FSLH, 1 2, 60)
-        COMBO(escape, &kp ESC, 0 1, 60)
+        COMBO(escape, &kp ESC, 1 2, 60)
+        COMBO(return, &kp RET, 17 18, 60)
         //COMBO(minus, &kp MINUS, 31 32, 60)
-        COMBO(underscore, &kp UNDER, 32 33, 60)
+        //COMBO(underscore, &kp UNDER, 32 33, 60)
         //COMBO(capslock, &caps_word, 20 21, 60)
         COMBO(reset_left, &bootloader, 0 1 2 3, 100)
         //COMBO(reset_right, &bootloader, 6 7 8 9, 100)
@@ -84,7 +85,7 @@
                    &kp Q        &kp W         &kp F         &kp P              &kp G              &kp J               &kp L            &kp U                 &kp Y         &kp MINUS
                    &mt LALT A   &mt LCTRL R   &mt LCMD S    &mt LSHIFT T       &kp D              &kp H               &mt RSHIFT N     &mt RCMD E            &mt RCTRL I   &mt RALT O
                    &kp Z        &kp X         &kp C         &kp V              &kp B              &kp K               &kp M            &kp COMMA             &kp DOT       &kp QMARK
-				 /*&            &*/              &kp LCTRL       &kp LALT      &base_lt SYM_L BSPC    &base_lt NUM_L SPACE     &kp RCMD       &base_lt NAV_L RET     /*  &             &*/
+				 /*&            &*/              &kp LCTRL       &kp LALT      &base_lt SYM_L SPACE    &base_lt NUM_L BSPC     &kp RCMD       &base_lt NAV_L RET     /*  &             &*/
 			>;
 		};
 
