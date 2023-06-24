@@ -79,7 +79,7 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <R_KEYS THUMBS>;
+            hold-trigger-key-positions = <R_KEYS>;
         };
         rhr: right_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -89,7 +89,7 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <L_KEYS THUMBS>;
+            hold-trigger-key-positions = <L_KEYS>;
         };
     };
 
@@ -110,7 +110,7 @@
 			bindings = <
                    &kp N1       &kp N2        &kp N3        &kp N4             &kp N5             &kp N6              &kp N7           &kp N8                   &kp N9        &kp N0
                    &lhr LALT GRAVE  &none     &none         &lhr LSHIFT BACKSLASH  &none          &kp SEMI            &rhr RSHIFT LBKT &rhr RCMD RBKT           &rhr RCTRL SQT &rhr RALT EQUAL
-                   &none        &none         &none         &none              &none              &none               &none            &none                    &none   ß      &none
+                   &none        &none         &none         &none              &none              &none               &none            &none                    &none         &none
 				 /*&            &*/           &none         &trans             &kp LSHIFT         &trans              &trans           &none     /*             &             &*/
 			>;
 		};
