@@ -67,11 +67,20 @@
             compatible = "zmk,behavior-hold-tap";
             label = "BASE_LAYER_HOLD_TAP";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
             quick-tap-ms = <75>;
             global-quick-tap;
             bindings = <&mo>, <&kp>;
+        };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-unless-interrupted";
+            bindings = <&kp>, <&kp>;
         };
 
     };
@@ -83,7 +92,7 @@
 		colemak_layer {
 			bindings = <
                    &kp Q        &kp W         &kp F         &kp P              &kp G              &kp J               &kp L            &kp U                 &kp Y         &kp MINUS
-                   &mt LALT A   &mt LCTRL R   &mt LCMD S    &mt LSHIFT T       &kp D              &kp H               &mt RSHIFT N     &mt RCMD E            &mt RCTRL I   &mt RALT O
+                   &hm LALT A   &hm LCTRL R   &hm LCMD S    &hm LSHIFT T       &kp D              &kp H               &hm RSHIFT N     &hm RCMD E            &hm RCTRL I   &hm RALT O
                    &kp Z        &kp X         &kp C         &kp V              &kp B              &kp K               &kp M            &kp COMMA             &kp DOT       &kp QMARK
 				 /*&            &*/              &kp LCTRL       &kp LALT      &base_lt SYM_L SPACE    &base_lt NUM_L BSPC     &kp RCMD       &base_lt NAV_L RET     /*  &             &*/
 			>;
