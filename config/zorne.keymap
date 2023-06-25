@@ -106,14 +106,14 @@
                    &kp Q        &kp W         &kp F         &kp P              &kp G              &kp J               &kp L            &kp U                 &kp Y         &kp MINUS
                    &lhr LALT A  &lhr LCTRL R  &lhr LCMD S   &lhr LSHIFT T      &kp D              &kp H               &rhr RSHIFT N    &rhr RCMD E           &rhr RCTRL I  &rhr RALT O
                    &kp Z        &kp X         &kp C         &kp V              &kp B              &kp K               &kp M            &kp COMMA             &kp DOT       &kp SLASH
-				 /*&            &*/           &none         &kp TAB      &base_lt SYM_L SPACE    &base_lt NUM_L BSPC     &base_lt NAV_L RCMD       &none     /*  &             &*/
+				 /*&            &*/           &none         &kp TAB            &kp SPACE    &base_lt NUM_L BSPC     &base_lt NAV_L RCMD       &none     /*  &             &*/
 			>;
 		};
 
 		num_layer {
 			bindings = <
                    &kp N1       &kp N2        &kp N3        &kp N4             &kp N5             &kp N6              &kp N7           &kp N8                   &kp N9        &kp N0
-                   &lhr LALT GRAVE  &none     &none         &lhr LSHIFT BACKSLASH  &none          &kp SEMI            &rhr RSHIFT LBKT &rhr RCMD RBKT           &rhr RCTRL SQT &rhr RALT EQUAL
+                   &lhr LALT GRAVE &kp LCTRL  &kp LCMD      &lhr LSHIFT BACKSLASH  &none          &kp SEMI            &rhr RSHIFT LBKT &rhr RCMD RBKT           &rhr RCTRL SQT &rhr RALT EQUAL
                    &none        &none         &none         &none              &none              &none               &none            &none                    &none         &none
 				 /*&            &*/           &none         &trans             &kp LSHIFT         &trans              &trans           &none     /*             &             &*/
 			>;
