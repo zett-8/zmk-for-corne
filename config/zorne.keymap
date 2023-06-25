@@ -23,8 +23,9 @@
 #define NAV_L  3
 
 //todo: make copy and paste shortcuts. with CMD, not CTRL
-//#define MY_COPY LG(C)
-//#define MY_PASTE LG(V)
+#define MY_COPY LG(C)
+#define MY_PASTE LG(V)
+#define CMD_BRK LG(LS(LBKT))
 //#define VI_U LC(Z)
 //#define VI_W LC(RIGHT)
 //#define VI_B LC(LEFT)
@@ -56,6 +57,12 @@
 
         COMBO(escape, &kp ESC, 1 2, 60)
         COMBO(tab, &kp TAB, 11 12, 60)
+        COMBO(kana, &kp INT_KANA, 16 17, 60)
+        COMBO(eisuu, &kp INT_RO, 12 13, 60)
+
+        COMBO(copy, MY_COPY, 11 12, 60)
+        COMBO(paste, MY_PASTE, 11 12, 60)
+
         COMBO(backspace, &kp BSPC, 7 8, 60)
         COMBO(return, &kp RET, 17 18, 60)
     };
@@ -128,7 +135,7 @@
 			bindings = <
                    &none        &kp UP        &none         &none              &none             &bt BT_SEL 0        &none            &kp UP                   &bt BT_SEL 3  &bt BT_SEL 4
                    &kp LALT     &kp LCTRL     &kp LCMD      &kp LSHIFT         &none             &none               &kp LEFT         &kp DOWN                 &kp RIGHT     &none
-                   &bt BT_CLR   &none         &none         &kp C_VOL_UP       &kp C_VOL_DN      &none               &none            &none                    &none         &none 
+                   &bt BT_CLR   &none         &none         &kp C_VOL_UP       &kp C_VOL_DN      &none               &kp CMD_BRK            &none                    &none         &none
 				 /*&            &*/         &none         &trans            &mt BSPC BSPC    &bt BT_PRV       &bt BT_NXT               &none     /*            &             &*/
 			>;
 		};
