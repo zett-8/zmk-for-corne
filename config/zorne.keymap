@@ -53,8 +53,9 @@
 
         COMBO(escape, &kp ESC, 1 2, 60)
         COMBO(tab, &kp TAB, 11 12, 60)
-        COMBO(kana, &kp RCMD, 6 16, 60)
-        COMBO(eisuu, &kp LCMD, 3 13, 60)
+
+        COMBO(kana, &kp INT2, 6 16, 60)
+        COMBO(eisuu, &kp INT1, 3 13, 60)
 
         COMBO(copy, &kp LG(C), 21 22, 60)
         COMBO(paste, &kp LG(V), 22 23, 60)
@@ -105,7 +106,7 @@
                    &kp Q        &kp W         &kp F         &kp P              &kp G              &kp J               &kp L            &kp U                 &kp Y         &kp MINUS
                    &lhr LALT A  &lhr LCTRL R  &lhr LCMD S   &lhr LSHIFT T      &kp D              &kp H               &rhr RSHIFT N    &rhr RCMD E           &rhr RCTRL I  &rhr RALT O
                    &kp Z        &kp X         &kp C         &kp V              &kp B              &kp K               &kp M            &kp COMMA             &kp DOT       &kp SLASH
-				 /*&            &*/           &none         &kp LALT      &base_lt SYM_L SPACE    &base_lt NUM_L BSPC     &base_lt NAV_L RCMD       &none     /*  &             &*/
+				 /*&            &*/           &none         &kp TAB      &base_lt SYM_L SPACE    &base_lt NUM_L BSPC     &base_lt NAV_L RCMD       &none     /*  &             &*/
 			>;
 		};
 
