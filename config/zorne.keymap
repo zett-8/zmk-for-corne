@@ -60,8 +60,8 @@
         COMBO(kana, &kp INT_KANA, 16 17, 60)
         COMBO(eisuu, &kp INT_RO, 12 13, 60)
 
-        COMBO(copy, MY_COPY, 11 12, 60)
-        COMBO(paste, MY_PASTE, 11 12, 60)
+        COMBO(copy, &kp MY_COPY, 21 22, 60)
+        COMBO(paste, &kp MY_PASTE, 22 23, 60)
 
         COMBO(backspace, &kp BSPC, 7 8, 60)
         COMBO(return, &kp RET, 17 18, 60)
