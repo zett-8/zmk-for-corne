@@ -105,7 +105,7 @@
                    &kp Q        &kp W         &kp F         &kp P              &kp G              &kp J               &kp L            &kp U                 &kp Y         &kp MINUS
                    &lhr LALT A  &lhr LCTRL R  &lhr LCMD S   &lhr LSHIFT T      &kp D              &kp H               &rhr RSHIFT N    &rhr RCMD E           &rhr RCTRL I  &rhr RALT O
                    &kp Z        &kp X         &kp C         &kp V              &kp B              &kp K               &kp M            &kp COMMA             &kp DOT       &kp SLASH
-				 /*&            &*/           &none         &mt LG(LSHIFT) TAB            &kp SPACE    &base_lt NUM_L BSPC     &base_lt NAV_L RCMD       &none     /*  &             &*/
+				 /*&            &*/           &none         &mt LG(LSHIFT) TAB &kp SPACE          &mo NUM_L           &base_lt NAV_L RCMD  &none     /*  &             &*/
 			>;
 		};
 
