@@ -62,7 +62,7 @@
         COMBO(backspace, &kp BSPC, 7 8, 60)
         COMBO(return, &kp RET, 17 18, 60)
 
-        COMBO(special, &kp F15, 31 34, 60)
+        COMBO(special, &kp LG(F15), 32 33, 60)
     };
 
     behaviors {
