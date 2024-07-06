@@ -1,17 +1,17 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_HAPLO-INS_LEFT
+if SHIELD_ZORNE_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "haplo-ins"
+	default "zorne"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_HAPLO-INS_LEFT || SHIELD_HAPLO-INS_RIGHT
+if SHIELD_ZORNE_LEFT || SHIELD_ZORNE_RIGHT
 
 config ZMK_SPLIT
 	default y

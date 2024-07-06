@@ -1,4 +1,4 @@
-# HAPLO-INSUFFICIENT
+# Zorne
 
 Based on Shield configuration for [rae-dux][1]
 
